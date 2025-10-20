@@ -685,7 +685,7 @@ class WiFiScan
       };
     #else
       wifi_country_t country = {
-        .cc = "PH",
+        .cc = "US",
         .schan = 1,
         .nchan = 13,
         .policy = WIFI_COUNTRY_POLICY_AUTO,
