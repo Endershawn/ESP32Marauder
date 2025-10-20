@@ -2986,7 +2986,7 @@ void WiFiScan::RunEapolScan(uint8_t scan_mode, uint16_t color)
 
   esp_err_t err;
   wifi_config_t conf;
-  err = esp_wifi_set_protocol(WIFI_IF_AP, WIFI_PROTOCOL_11B | WIFI_PROTOCOL_11G | WIFI_PROTOCOL_11N | WIFI_PROTOCOL_LR);
+  err = esp_wifi_set_protocols(WIFI_IF_AP, WIFI_PROTOCOL_11B | WIFI_PROTOCOL_11G | WIFI_PROTOCOL_11N | WIFI_PROTOCOL_LR);
   if (err != 0)
   {
     Serial.print("could not set protocol : err=0x");
